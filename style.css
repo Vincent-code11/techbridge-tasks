@@ -19,10 +19,11 @@ body {
 
 header {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   color: #ebf2fa;
   background-color: #00072d;
-  padding: 0 10rem;
+  padding: 1rem 2rem;
 }
 
 header p {
@@ -33,16 +34,19 @@ header p {
 
 nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  margin-left: auto;
-  padding: 1rem 2rem;
+  margin-left: 0;
+  padding: 0.5rem 0;
   font-size: 1.6rem;
+  width: 100%;
 }
 
 .links {
   display: flex;
-  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
   list-style: none;
 }
 
@@ -55,36 +59,34 @@ nav {
   color: #38b000;
 }
 
-
 .hero {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   background-color: whitesmoke;
   color: #00072d;
   align-items: center;
-  justify-content: left;
-  padding: 5rem auto;
-  text-align: left;
-  padding: 5rem 10rem;
+  justify-content: center;
+  padding: 3rem 2rem;
+  text-align: center;
 }
 
 .hero-content {
   display: flex;
   flex-direction: column;
   word-wrap: wrap;
-  align-items: flex-start;
-  width: 50rem;
+  align-items: center;
+  width: 100%;
 }
 
 .hero img {
-  width: 40rem;
-  margin-left: auto;
-  margin-right: 2rem;
+  width: 100%;
+  max-width: 25rem;
+  margin: 2rem 0 0 0;
   object-fit: contain;
 }
 
 .hero-content h1 {
-  font-size: 4.5rem;
+  font-size: 3.2rem;
   margin-bottom: 1rem;
 }
 
@@ -94,7 +96,7 @@ p {
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: 2.6rem;
   margin-bottom: 1rem;
 }
 
@@ -105,9 +107,8 @@ h2 {
   color: #00072d;
   align-items: center;
   justify-content: center;
-  padding: 5rem auto;
   text-align: left;
-  padding: 0 4rem;
+  padding: 0 2rem;
 }
 
 .section-inner {
@@ -118,12 +119,12 @@ h2 {
   text-align: center;
   max-width: 60rem;
   margin: 0 auto;
-  padding: 4rem 1.5rem;
+  padding: 3rem 1.5rem;
 }
 
 .section-inner h2 {
-  font-size: 3rem;
-  margin: 3rem 0;
+  font-size: 2.6rem;
+  margin: 2rem 0;
 }
 
 .section-inner p {
@@ -140,7 +141,7 @@ h2 {
   justify-content: left;
   background-color: whitesmoke;
   color: #00072d;
-  padding: 5rem 10rem;
+  padding: 3rem 2rem;
 }
 
 #programs p {
@@ -151,10 +152,11 @@ h2 {
 
 .container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
   width: 100%;
-  gap: 5rem;
+  gap: 2rem;
 }
 
 .programs-container {
@@ -163,7 +165,7 @@ h2 {
   flex-wrap: wrap;
   justify-content: left;
   padding: 2rem 2rem;
-  width: 50%;
+  width: 100%;
   gap: 2rem;
   border: 3px solid #e8e5da;
   border-radius: 5px;
@@ -174,7 +176,7 @@ h2 {
 }
 
 .programs-container h3 {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   margin-bottom: 1rem;
 }
 
@@ -185,7 +187,7 @@ h2 {
   justify-content: left;
   background-color: #e8e5da;
   color: #00072d;
-  padding: 5rem 10rem;
+  padding: 3rem 2rem;
 }
 
 .apply-btn {
@@ -213,11 +215,11 @@ h2 {
   flex-wrap: wrap;
   background-color: whitesmoke;
   color: #00072d;
-  padding: 5rem 10rem;
+  padding: 3rem 2rem;
 }
 
 #apply p {
-  width: 30%;
+  width: 100%;
   line-height: 1.5;
   font-size: 1.6rem;
 }
@@ -229,7 +231,7 @@ h2 {
   justify-content: center;
   background-color: whitesmoke;
   color: #00072d;
-  padding: 5rem 10rem;
+  padding: 3rem 2rem;
 }
 
 #community div {
@@ -241,12 +243,12 @@ h2 {
   background-color: #38b000;
   color: whitesmoke;
   border-radius: 5px;
-  padding: 5rem 10rem;
-  width: 70%;
+  padding: 3rem 2rem;
+  width: 100%;
 }
 
 #community h2 {
-  font-size: 4rem;
+  font-size: 2.8rem;
   margin-bottom: 1rem;
 }
 
@@ -279,7 +281,7 @@ h2 {
   justify-content: center;
   background-color: #333;
   color: whitesmoke; 
-  padding: 5rem 10rem;
+  padding: 3rem 2rem;
 }
 
 #contact p {
@@ -312,7 +314,7 @@ footer {
   justify-content: center;
   background-color: #333;
   color: whitesmoke; 
-  padding: 5rem 10rem;
+  padding: 3rem 2rem;
 }
 
 footer nav {
@@ -321,10 +323,144 @@ footer nav {
   list-style: none;
   margin-bottom: 2rem;
   margin-left: 0;
+  width: auto;
 }
 
 footer a {
   text-decoration: none;
-  color: #333;
+  color: whitesmoke;
   font-size: 1.6rem;
+}
+
+footer a:hover {
+  color: #38b000;
+}
+
+@media (min-width: 768px) {
+  header {
+    padding: 1rem 4rem;
+  }
+
+  nav {
+    width: auto;
+    margin-left: auto;
+  }
+
+  .links {
+    justify-content: flex-end;
+  }
+
+  .hero {
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    text-align: left;
+    padding: 4rem 4rem;
+  }
+
+  .hero-content {
+    align-items: flex-start;
+    width: 55%;
+  }
+
+  .hero img {
+    width: 100%;
+    max-width: 28rem;
+    margin: 0 0 0 2rem;
+  }
+
+  .hero-content h1 {
+    font-size: 3.8rem;
+  }
+
+  .about {
+    padding: 0 4rem;
+  }
+
+  #programs, #internship, #apply, #community, #contact, footer {
+    padding: 4rem 4rem;
+  }
+
+  .container {
+    flex-direction: row;
+    align-items: stretch;
+  }
+
+  .programs-container {
+    width: calc(50% - 1rem);
+  }
+
+  #apply p {
+    width: 60%;
+  }
+
+  #community div {
+    width: 85%;
+  }
+}
+
+@media (min-width: 1024px) {
+  header {
+    padding: 0 10rem;
+  }
+
+  nav {
+    padding: 1rem 2rem;
+  }
+
+  .links {
+    gap: 2rem;
+  }
+
+  .hero {
+    padding: 5rem 10rem;
+  }
+
+  .hero-content {
+    width: 50rem;
+  }
+
+  .hero img {
+    width: 40rem;
+    max-width: none;
+    margin-left: auto;
+    margin-right: 2rem;
+  }
+
+  .hero-content h1 {
+    font-size: 4.5rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  .section-inner h2 {
+    font-size: 3rem;
+    margin: 3rem 0;
+  }
+
+  #programs, #internship, #apply, #community, #contact, footer {
+    padding: 5rem 10rem;
+  }
+
+  .container {
+    gap: 5rem;
+  }
+
+  .programs-container h3 {
+    font-size: 2.5rem;
+  }
+
+  #apply p {
+    width: 30%;
+  }
+
+  #community div {
+    width: 70%;
+  }
+
+  #community h2 {
+    font-size: 4rem;
+  }
 }
