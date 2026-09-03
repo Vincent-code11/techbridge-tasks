@@ -3,94 +3,196 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TechBridge</title>
+  <title>TechBridge | Bridging Learning to Real-World Experience</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <p>TechBridge</p>
-    <nav>
-    <ul class="links">
-      <li><a class="nav-link" href="#about">About</a></li>
-      <li><a class="nav-link" href="#programs">Programs</a></li>
-      <li><a class="nav-link" href="#internship">Internship</a></li>
-      <li><a class="nav-link" href="#apply">Apply</a></li>
-      <li><a class="nav-link" href="#community">Community</a></li>
-      <li><a class="nav-link" href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-  </header>
-  
-  <section id="hero" class="hero">
-    <div class="hero-content">
-      <h1>Bridging Learning to Real-World Experience</h1>
-      <p>At TechBridge, we believe in the power of hands-on experience to shape the future of technology. Empowering the next generation of tech innovators.</p>
-    </div>
-    <img src="images/techbridge-logo.png" alt="TechBridge Logo" class="logo">
-  </section>
-  <section id="about" class="about">
-    <div class="section-inner">
-      <h2>What is TechBridge?</h2>
-      <p>TechBridge is a 30-day practical internship program designed to help students and early-career learners build real, applicable skills in Data Analytics and Web Development. Rather than just theory, participants work on hands-on tasks that mirror what they'd encounter in an actual tech role, guided by structured project briefs like this one.</p>
-    </div>
-    
-  </section>
-  <section id="programs">
-    <h2>Our Programs</h2>
-    <p>Our current range of programs include the following:</p>
-    <div class="container">
-      <div class="programs-container">
-        <h3>Data Analytics</h3>
-        <p>Our Data Analytics program is designed to equip students with the skills needed to analyze and interpret complex data sets, making informed decisions based on insights.</p>
-      </div>
-      <div class="programs-container">
-        <h3>Web Development</h3>
-        <p>Our Web Development program focuses on building modern, responsive websites and applications using the latest technologies and best practices.</p>
-      </div>
-    </div>
-    
-  </section>
-  <section id="internship">
-    <div class="section-inner">
-      <h2>Internship Opportunity</h2>
-      <p>We offer  30-day internship programs for students to gain valuable industry experience. Learning industry ready skills by working on real-world projects that offer real value. And participants may also recieve a recommendation letter based on successful participation/performance.</p>
-      <a href="https://forms.gle/8EbdSy5ttGfLZfjv5?utm_source=chatgpt.com" class="apply-btn" target="_blank">Apply for Internship</a>
-    </div>
-  </section>
-  <section id="apply">
-    <h2>Apply Now</h2>
-    <p>Ready to take the next step in your tech journey? Apply for our programs and internships today!</p>
-    <a href="https://forms.gle/8EbdSy5ttGfLZfjv5?utm_source=chatgpt.com" class="apply-btn" target="_blank">Apply Now</a>
-  </section>
-  <section id="community">
-    <div>
-      <h2>Join Our Community</h2>
-      <p>Connect with like-minded individuals, share knowledge, and collaborate on projects. Join our community to stay updated on the latest tech trends and opportunities.</p>
-      <a href="https://chat.whatsapp.com/FqpBvYS4oaK32cXDxc8JIS?utm_source=chatgpt.com" target="_blank">Join Our WhatsApp Community</a>
-    </div>
-  </section>
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <p>If you have any questions or inquiries, feel free to reach out to us:</p>
-    <ul>
-      <li>Email: <a href="mailto:techbridgebaslink@gmail.com">techbridgebaslink@gmail.com</a></li>
-    </ul>
-  </section>
-  <footer>
-    <nav>
-      <ul class="links">
-        <li><a class="nav-link" href="#about">About</a></li>
-        <li><a class="nav-link" href="#programs">Programs</a></li>
-        <li><a class="nav-link" href="#internship">Internship</a></li>
-        <li><a class="nav-link" href="#apply">Apply</a></li>
-        <li><a class="nav-link" href="#community">Community</a></li>
-        <li><a class="nav-link" href="#contact">Contact</a></li>
+
+  <!-- ===== NAV ===== -->
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+      <a href="#top" class="brand">
+        <img src="images/techbridge-logo.png" alt="TechBridge logo" width="100" height="70">
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#programs">Programs</a></li>
+        <li><a href="#internship">Internship</a></li>
+        <li><a href="#community">Community</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#apply" class="nav-cta">Apply</a></li>
       </ul>
     </nav>
-    <p>&copy; 2024 TechBridge by Baselink Services Limited. All rights reserved.</p>
+  </header>
+
+  <main id="top">
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="hero">
+      <div class="hero-content">
+        <p class="eyebrow">TechBridge Internship Program</p>
+        <h1>Bridging Learning to Real-World Experience</h1>
+        <p class="hero-text">
+          TechBridge is a practical internship program by Baselink Services Limited,
+          helping learners move from classroom knowledge to hands-on, real-world
+          experience in tech.
+        </p>
+        <div class="hero-actions">
+          <a href="https://forms.gle/" class="btn btn-primary" target="_blank" rel="noopener">Apply now</a>
+          <a href="https://chat.whatsapp.com/" class="btn btn-secondary" target="_blank" rel="noopener">Join our WhatsApp community</a>
+        </div>
+      </div>
+      <div class="hero-media">
+        <img src="images/hero-placeholder.svg" alt="Illustration representing hands-on learning at TechBridge" width="600" height="420">
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="about" id="about">
+      <div class="section-inner">
+        <h2>What is TechBridge?</h2>
+        <p>
+          TechBridge is a 30-day practical internship program designed to help
+          students and early-career learners build real, applicable skills in
+          Data Analytics and Web Development. Rather than just theory, participants
+          work on hands-on tasks that mirror what they'd encounter in an actual
+          tech role, guided by structured project briefs like this one.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== PROGRAMS ===== -->
+    <section class="programs" id="programs">
+      <div class="section-inner">
+        <h2>Our programs</h2>
+        <p class="section-subtitle">Choose the track that fits where you want to grow.</p>
+
+        <div class="program-grid">
+          <article class="program-card">
+            <div class="program-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 19V5a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v14"/>
+                <path d="M4 19a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2"/>
+                <path d="M8 7h8M8 11h8M8 15h5"/>
+              </svg>
+            </div>
+            <h3>Data Analytics</h3>
+            <p>
+              Learn to work with real data: cleaning, analyzing, and presenting
+              insights using practical tools and structured exercises.
+            </p>
+          </article>
+
+          <article class="program-card">
+            <div class="program-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="16 18 22 12 16 6"/>
+                <polyline points="8 6 2 12 8 18"/>
+              </svg>
+            </div>
+            <h3>Web Development</h3>
+            <p>
+              Build responsive websites from scratch with HTML, CSS, and
+              JavaScript through guided, task-based projects.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== INTERNSHIP ===== -->
+    <section class="internship" id="internship">
+      <div class="section-inner internship-grid">
+        <div>
+          <h2>The internship</h2>
+          <p>
+            The TechBridge internship runs for 30 days and is fully practical.
+            Instead of lectures, you complete real project tasks, get guidance
+            along the way, and finish with something tangible to show for it.
+          </p>
+          <ul class="internship-list">
+            <li>30-day structured, hands-on program</li>
+            <li>Task-based learning, not just theory</li>
+            <li>Tracks in Data Analytics and Web Development</li>
+          </ul>
+        </div>
+        <div class="highlight-card">
+          <p class="highlight-label">A possible benefit</p>
+          <p class="highlight-text">
+            Interns who complete the program and perform well may be issued a
+            recommendation letter.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== APPLY CTA ===== -->
+    <section class="apply-cta" id="apply">
+      <div class="section-inner apply-inner">
+        <h2>Ready to bridge the gap?</h2>
+        <p>Applications are open now. It only takes a few minutes to apply.</p>
+        <a href="https://forms.gle/" class="btn btn-primary btn-lg" target="_blank" rel="noopener">Apply now</a>
+      </div>
+    </section>
+
+    <!-- ===== COMMUNITY ===== -->
+    <section class="community" id="community">
+      <div class="section-inner community-inner">
+        <h2>Join the community</h2>
+        <p>
+          Connect with other learners, ask questions, and stay updated on new
+          cohorts through our WhatsApp community.
+        </p>
+        <a href="https://chat.whatsapp.com/" class="btn btn-secondary" target="_blank" rel="noopener">Join on WhatsApp</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer" id="contact">
+    <div class="section-inner footer-inner">
+      <div class="footer-brand">
+        <img src="images/logo.svg" alt="TechBridge logo" width="28" height="28">
+        <span>TechBridge</span>
+      </div>
+      <p class="footer-tagline">Bridging Learning to Real-World Experience</p>
+      <a href="mailto:techbridgebaslink@gmail.com" class="footer-email">techbridgebaslink@gmail.com</a>
+      <ul class="footer-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#programs">Programs</a></li>
+        <li><a href="#internship">Internship</a></li>
+        <li><a href="#apply">Apply</a></li>
+      </ul>
+      <p class="footer-copy">&copy; 2026 TechBridge by Baselink Services Limited.</p>
+    </div>
   </footer>
+
+  <script>
+    const navToggle = document.getElementById('navToggle');
+    const navLinks = document.getElementById('navLinks');
+
+    navToggle.addEventListener('click', () => {
+      const isOpen = navLinks.classList.toggle('open');
+      navToggle.setAttribute('aria-expanded', isOpen);
+      navToggle.classList.toggle('active');
+    });
+
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('open');
+        navToggle.setAttribute('aria-expanded', 'false');
+        navToggle.classList.remove('active');
+      });
+    });
+  </script>
+
 </body>
 </html>
