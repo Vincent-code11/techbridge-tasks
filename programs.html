@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Programs | TechBridge</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== NAV ===== -->
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+      <a href="index.html#top" class="brand">
+        <img src="images/techbridge-logo.png" alt="TechBridge logo" width="100" height="70">
+      </a>
+
+      <input type="checkbox" id="navToggle" class="nav-toggle-input">
+      <label class="nav-toggle" for="navToggle" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="programs.html">Programs</a></li>
+        <li><a href="index.html#internship">Internship</a></li>
+        <li><a href="index.html#community">Community</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+        <li><a href="#apply" class="nav-cta">Apply</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <!-- ===== PAGE HERO / OVERVIEW ===== -->
+    <section class="page-hero" id="overview">
+      <div class="section-inner">
+        <a href="index.html#top" class="breadcrumb-back">&larr; Back to home</a>
+        <p class="eyebrow">TechBridge Programs</p>
+        <h1>Learn by doing, not just by watching</h1>
+        <p class="hero-text">
+          TechBridge currently runs two practical, task-based programs. Instead
+          of sitting through lectures, you work on real project briefs, apply
+          what you learn immediately, and walk away with tangible experience
+          you can point to — whether your interest is in data or in the web.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== PROGRAM DETAIL / FILTERABLE CARDS ===== -->
+    <section class="programs" id="programs">
+      <div class="section-inner">
+        <h2>Our two tracks</h2>
+        <p class="section-subtitle">Filter below, or scroll to compare both side by side.</p>
+
+        <div class="filter-bar" role="group" aria-label="Filter programs">
+          <input type="radio" name="programFilter" id="filter-all" class="filter-radio" checked>
+          <label for="filter-all" class="filter-btn">All programs</label>
+
+          <input type="radio" name="programFilter" id="filter-data" class="filter-radio">
+          <label for="filter-data" class="filter-btn">Data Analytics</label>
+
+          <input type="radio" name="programFilter" id="filter-web" class="filter-radio">
+          <label for="filter-web" class="filter-btn">Web Development</label>
+        </div>
+
+        <div class="programs-detail-grid" id="programGrid">
+
+          <!-- Data Analytics -->
+          <article class="program-detail-card" data-category="data">
+            <div class="program-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 19V5a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v14"/>
+                <path d="M4 19a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2"/>
+                <path d="M8 7h8M8 11h8M8 15h5"/>
+              </svg>
+            </div>
+            <span class="program-focus">Working with data &amp; extracting insights</span>
+            <h3>Data Analytics</h3>
+            <p class="program-desc">
+              This track introduces you to practical data analysis. You'll take
+              messy, real-world data and turn it into clear, business-ready
+              insights using structured, hands-on exercises.
+            </p>
+
+            <div class="skill-tags">
+              <span class="skill-tag">Spreadsheet analysis</span>
+              <span class="skill-tag">Data cleaning</span>
+              <span class="skill-tag">SQL</span>
+              <span class="skill-tag">Data visualization</span>
+              <span class="skill-tag">Business-focused analysis</span>
+            </div>
+
+            <details class="expand-panel">
+              <summary class="expand-toggle">What you'll learn</summary>
+              <div class="expand-panel-inner">
+                <ul>
+                  <li>Organize and analyze data confidently in spreadsheets</li>
+                  <li>Spot and fix messy, inconsistent, or incomplete data</li>
+                  <li>Write SQL queries to pull and shape data from tables</li>
+                  <li>Turn numbers into charts and dashboards people understand</li>
+                  <li>Frame findings around real business questions and decisions</li>
+                </ul>
+              </div>
+            </details>
+          </article>
+
+          <!-- Web Development -->
+          <article class="program-detail-card" data-category="web">
+            <div class="program-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="16 18 22 12 16 6"/>
+                <polyline points="8 6 2 12 8 18"/>
+              </svg>
+            </div>
+            <span class="program-focus">Designing &amp; building for the web</span>
+            <h3>Web Development</h3>
+            <p class="program-desc">
+              This track introduces you to practical website development.
+              You'll build real, responsive projects from scratch and learn the
+              workflow developers actually use to ship their work.
+            </p>
+
+            <div class="skill-tags">
+              <span class="skill-tag">HTML</span>
+              <span class="skill-tag">CSS</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">Git/GitHub</span>
+              <span class="skill-tag">Building web projects</span>
+            </div>
+
+            <details class="expand-panel">
+              <summary class="expand-toggle">What you'll learn</summary>
+              <div class="expand-panel-inner">
+                <ul>
+                  <li>Structure pages with clean, semantic HTML</li>
+                  <li>Style and lay out responsive interfaces with CSS</li>
+                  <li>Add interactivity and logic with JavaScript</li>
+                  <li>Track changes and collaborate using Git and GitHub</li>
+                  <li>Ship complete, deployed web projects for your portfolio</li>
+                </ul>
+              </div>
+            </details>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== COMPARISON ===== -->
+    <section class="comparison" id="compare">
+      <div class="section-inner">
+        <h2>Which track is right for you?</h2>
+        <p class="section-subtitle">A quick side-by-side of both programs.</p>
+
+        <div class="comparison-table-wrap">
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                <th scope="col">&nbsp;</th>
+                <th scope="col">Data Analytics</th>
+                <th scope="col">Web Development</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Focus</th>
+                <td>Working with data and extracting insights</td>
+                <td>Designing and building websites and web apps</td>
+              </tr>
+              <tr>
+                <th scope="row">Core tools</th>
+                <td>Spreadsheets, SQL, visualization tools</td>
+                <td>HTML, CSS, JavaScript, Git/GitHub</td>
+              </tr>
+              <tr>
+                <th scope="row">You'll practice</th>
+                <td>Cleaning data, querying, building dashboards</td>
+                <td>Building, styling, and shipping web projects</td>
+              </tr>
+              <tr>
+                <th scope="row">Good fit if you like</th>
+                <td>Numbers, patterns, and business questions</td>
+                <td>Visual design, building things you can click on</td>
+              </tr>
+              <tr>
+                <th scope="row">Format</th>
+                <td>30-day, task-based, practical</td>
+                <td>30-day, task-based, practical</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== APPLY CTA ===== -->
+    <section class="apply-cta" id="apply">
+      <div class="section-inner apply-inner">
+        <h2>Ready to bridge the gap?</h2>
+        <p>Pick a track and apply — it only takes a few minutes.</p>
+        <a href="https://forms.gle/8EbdSy5ttGfLZfjv5?utm_source=chatgpt.com" class="btn btn-primary btn-lg" target="_blank" rel="noopener">Apply for TechBridge Internship</a>
+        <div style="margin-top: 1rem;">
+          <a href="index.html#top" class="btn btn-secondary btn-lg">Back to homepage</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer" id="contact">
+    <div class="section-inner footer-inner">
+      <div class="footer-brand">
+        <img src="images/logo.svg" alt="TechBridge logo" width="28" height="28">
+        <span>TechBridge</span>
+      </div>
+      <p class="footer-tagline">Bridging Learning to Real-World Experience</p>
+      <a href="mailto:techbridgebaslink@gmail.com" class="footer-email">techbridgebaslink@gmail.com</a>
+      <ul class="footer-links">
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="programs.html">Programs</a></li>
+        <li><a href="index.html#internship">Internship</a></li>
+        <li><a href="#apply">Apply</a></li>
+      </ul>
+      <p class="footer-copy">&copy; 2026 TechBridge by Baselink Services Limited.</p>
+    </div>
+  </footer>
+
+
+</body>
+</html>

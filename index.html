@@ -15,15 +15,16 @@
         <img src="images/techbridge-logo.png" alt="TechBridge logo" width="100" height="70">
       </a>
 
-      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Toggle navigation menu">
+      <input type="checkbox" id="navToggle" class="nav-toggle-input">
+      <label class="nav-toggle" for="navToggle" aria-label="Toggle navigation menu">
         <span></span>
         <span></span>
         <span></span>
-      </button>
+      </label>
 
       <ul class="nav-links" id="navLinks">
         <li><a href="#about">About</a></li>
-        <li><a href="#programs">Programs</a></li>
+        <li><a href="programs.html">Programs</a></li>
         <li><a href="#internship">Internship</a></li>
         <li><a href="#community">Community</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -167,32 +168,13 @@
       <a href="mailto:techbridgebaslink@gmail.com" class="footer-email">techbridgebaslink@gmail.com</a>
       <ul class="footer-links">
         <li><a href="#about">About</a></li>
-        <li><a href="#programs">Programs</a></li>
+        <li><a href="programs.html">Programs</a></li>
         <li><a href="#internship">Internship</a></li>
         <li><a href="#apply">Apply</a></li>
       </ul>
       <p class="footer-copy">&copy; 2026 TechBridge by Baselink Services Limited.</p>
     </div>
   </footer>
-
-  <script>
-    const navToggle = document.getElementById('navToggle');
-    const navLinks = document.getElementById('navLinks');
-
-    navToggle.addEventListener('click', () => {
-      const isOpen = navLinks.classList.toggle('open');
-      navToggle.setAttribute('aria-expanded', isOpen);
-      navToggle.classList.toggle('active');
-    });
-
-    navLinks.querySelectorAll('a').forEach(link => {
-      link.addEventListener('click', () => {
-        navLinks.classList.remove('open');
-        navToggle.setAttribute('aria-expanded', 'false');
-        navToggle.classList.remove('active');
-      });
-    });
-  </script>
 
 </body>
 </html>
